@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Serviços Automotivos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+    <div class="container">
+        <form action="#" method="POST">
+            
+            <!-- Dados Pessoais -->
+            <div class="form-row">
+                <label for="nome">Nome completo:</label>
+                <input type="text" id="nome" name="nome">
+            </div>
+ 
+            <div class="form-row">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email">
+            </div>
+ 
+            <div class="form-row">
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco">
+            </div>
+ 
+            <div class="form-row">
+                <label for="bairro">Bairro:</label>
+                <input type="text" id="bairro" name="bairro">
+            </div>
+ 
+            <div class="form-row">
+                <label for="cidade">Cidade</label>
+                <input type="text" id="cidade" name="cidade">
+            </div>
+ 
+            <div class="form-row">
+                <label for="telefone">Telefone fixo ou celular:</label>
+                <input type="tel" id="telefone" name="telefone">
+            </div>
+ 
+            <!-- Serviços em couro -->
+            <div class="form-row align-top">
+                <label class="group-label">Serviços em couro:</label>
+                <div class="options-list">
+                    <label><input type="checkbox" name="servicos_couro" value="legitimo"> Bancos em couro - 100% Legítimo</label>
+                    <label><input type="checkbox" name="servicos_couro" value="misto"> Bancos em couro - Misto</label>
+                    <label><input type="checkbox" name="servicos_couro" value="sintetico"> Bancos em couro - 100% Sintético</label>
+                    <label><input type="checkbox" name="servicos_couro" value="volante"> Volante em couro</label>
+                    <label><input type="checkbox" name="servicos_couro" value="manopla"> Revestimento da manopla e coifa</label>
+                    <label><input type="checkbox" name="servicos_couro" value="apoio_braco"> Revestimento de apoio de braço</label>
+                </div>
+            </div>
+ 
+            <!-- Restauração e tapeçaria -->
+            <div class="form-row align-top">
+                <label class="group-label">Restauração e tapeçaria:</label>
+                <div class="options-list">
+                    <label><input type="checkbox" name="restauracao" value="completa"> Restauração completa de carros antigos</label>
+                    <label><input type="checkbox" name="restauracao" value="teto"> Somente troca do teto</label>
+                    <label><input type="checkbox" name="restauracao" value="assoalho"> Somente troca do assoalho</label>
+                    <label><input type="checkbox" name="restauracao" value="estrutura"> Reparos em estrutura dos bancos e ferragens</label>
+                    <label><input type="checkbox" name="restauracao" value="hidratacao"> Hidratação e higienização dos bancos</label>
+                </div>
+            </div>
+ 
+            <!-- Acessórios -->
+            <div class="form-row align-top">
+                <label class="group-label">Acessorios:</label>
+                <div class="options-list">
+                    <label><input type="checkbox" name="acessorios" value="kit"> Kit Hidratação p/ Couro</label>
+                    <label><input type="checkbox" name="acessorios" value="tapetes"> Tapetes personalizados</label>
+                    <label><input type="checkbox" name="acessorios" value="adaptacao_apoio"> Adaptação de apoio de braço</label>
+                </div>
+            </div>
+ 
+            <!-- Dados do Veículo -->
+            <div class="form-row">
+                <label for="marca">Marca fabricante:</label>
+                <select id="marca" name="marca">
+                    <option value="">Please Select</option>
+                    <option value="chevrolet">Chevrolet</option>
+                    <option value="fiat">Fiat</option>
+                    <option value="ford">Ford</option>
+                    <option value="volkswagen">Volkswagen</option>
+                    <option value="toyota">Toyota</option>
+                    <option value="honda">Honda</option>
+                    <option value="hyundai">Hyundai</option>
+                    <option value="outra">Outra</option>
+                </select>
+            </div>
+ 
+            <div class="form-row">
+                <label for="modelo">Nome modelo:</label>
+                <input type="text" id="modelo" name="modelo">
+            </div>
+ 
+            <div class="form-row">
+                <label for="ano">Ano de fabricação:</label>
+                <input type="text" id="ano" name="ano">
+            </div>
+ 
+            <!-- Forma de Pagamento -->
+            <div class="form-row align-top">
+                <label class="group-label">Especifique a forma de pagamento:</label>
+                <div class="options-list">
+                    <label><input type="radio" name="pagamento" value="avista"> Á vista</label>
+                    <label><input type="radio" name="pagamento" value="deposito"> Deposito em conta corrente</label>
+                    <label><input type="radio" name="pagamento" value="transferencia"> Doc ou transferência bancaria</label>
+                    <label><input type="radio" name="pagamento" value="cartao"> Parcelado até 4x no cartão de crédito.</label>
+                </div>
+            </div>
+ 
+            <!-- Detalhes -->
+            <div class="form-row align-top">
+                <label for="detalhes" class="group-label">Diga-nos com maior riqueza de detalhes o serviço de interesse:</label>
+                <textarea id="detalhes" name="detalhes" rows="5"></textarea>
+            </div>
+ 
+            <!-- Botão de Envio -->
+            <div class="form-row button-row">
+                <button type="submit">Enviar formulário</button>
+            </div>
+ 
+        </form>
+    </div>
+
+</body>
+</html>
